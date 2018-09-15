@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Hazardous Word Counter",
+  "description": "Counts Hazardous words on Amazon.com's detail page and generate a summary out of it.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.svg",
+    "default_popup": "src/popup.html"
+  },
+
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.amazon.*/*"],
+      "js": ["src/build/main.js"]
+    }
+  ]
+}

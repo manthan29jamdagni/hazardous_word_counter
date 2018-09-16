@@ -1,9 +1,16 @@
 {
   "name": "hazardous_word_counter",
   "version": "1.0.0",
+  "main": "src/js/main.js",
+  "scripts": {
+    "build": "parcel build src/js/main.js -d src/build/ -o main.js",
+    "watch": "parcel watch src/js/main.js -d src/build/ -o main.js"
+  },
   "dependencies": {
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "mark.js": "^8.11.1",
+    "npm": "^6.4.1",
     "parcel-bundler": "^1.9.7",
     "react": "^16.5.1",
     "react-dom": "^16.5.1"

@@ -1,0 +1,48 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+<head>
+    <title>Getting Started Extension's Popup</title>
+    <style type="text/css">
+        body {
+            margin: 5px;
+            white-space: nowrap;
+        }
+        #container {
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+        }
+        .btn-normal {
+            border: 1px solid #000;
+            border-radius: 15px;
+            padding: 5px 15px;
+            cursor: pointer;
+        }
+    </style>
+
+    <script src="js/popup.js"></script>
+</head>
+
+<body>
+<div id="container">
+
+    <button class="btn-normal">
+        Generate Summary Table
+    </button>
+
+    <button class="btn-normal highlight-hazardous-words">
+        Highlight Hazardous Words
+    </button>
+
+    <button class="btn-normal">
+        Ops Analytics
+    </button>
+
+</div>
+</body>
+</html>

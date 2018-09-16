@@ -1,5 +1,7 @@
 node_modules/
+*.cache/
 *.iml
 *.idea/*
+build/
 .DS_Store
 
